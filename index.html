@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's my mom's birthday!</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+	    <button class="btn btn-warning btn-lg"
+		onclick="playsound()"> Press me :) </button>
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+     <center>
+	<title> Happiest Birthday Mom! </title>
+    <body>
+        <h1> Happiest Birthday Beautiful! </h1>
+        <hr> 
+        <img id="mom.1" src="mom.1.jpeg">
+        <h3 id="mom.1"> I Love You So Much  </h3>
+        <button type="button" onclick="update()"> keep pressing me for beautiful pictures :) </button>
+        <hr>
+        <script>
+            var names=[
+                ".",
+                ".",
+                ".",
+				".",
+				".",
+				".",
+                ".",
+                ".",
+				".",
+				".",
+				".",
+                ".",
+                ".",
+				".",
+				".",
+				".",
+                ".",
+                ".",
+				".",
+				".",
+            ];
+            var pictures=[
+                "mom.2.jpeg",
+                "mom.3.jpeg",
+                "mom.4.jpeg",
+                "mom.5.jpeg",
+				"mom.6.jpeg",
+				"mom.7.jpeg",
+                "mom.8.jpeg",
+                "mom.9.jpeg",
+                "mom.10.jpeg",
+				"mom.11.jpeg",
+				"mom.12.jpeg",
+                "mom.13.jpeg",
+                "mom.14.jpeg",
+                "mom.15.jpeg",
+				"mom.16.jpeg",
+				"mom.17.jpeg",
+                "mom.18.jpeg",
+                "mom.19.jpeg",
+                "mom.20.jpeg"
+				
+            ];
+            var i=0;
+            function update()
+            {
+                if (i<names.length)
+                {
+                    document.getElementById("mom.1").src=pictures[i];
+                    document.getElementById("mom.1").innerHTML=names[i];
+                    i++
+                }
+                else {
+                    i=0;
+                }
+            }
+        </script>
+    </body>
+</body>
+</html>
